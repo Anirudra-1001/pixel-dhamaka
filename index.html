@@ -1,0 +1,57 @@
+<!-- Replace Games Section with this PLAYABLE VERSION -->
+<section id="games" class="games">
+    <div class="container">
+        <h2 class="section-title">🎮 PLAY MY GAMES NOW!</h2>
+        <div class="games-grid">
+            
+            <!-- SNAKE GAME -->
+            <div class="game-card playable-snake">
+                <div class="game-header">
+                    <h3>🐍 Snake Master</h3>
+                    <span class="high-score">High Score: <span id="snakeScore">0</span></span>
+                </div>
+                <canvas id="snakeCanvas" width="280" height="280"></canvas>
+                <div class="game-controls">
+                    <button onclick="startSnake()">Start Game</button>
+                    <span>Use Arrow Keys</span>
+                </div>
+            </div>
+
+            <!-- TIC TAC TOE -->
+            <div class="game-card playable-tictactoe">
+                <div class="game-header">
+                    <h3>❌⭕ Tic Tac Toe</h3>
+                    <span class="status" id="tictactoeStatus">Your Turn (X)</span>
+                </div>
+                <div id="tictactoeBoard" class="tictactoe-board"></div>
+                <button onclick="resetTicTacToe()">New Game</button>
+            </div>
+
+            <!-- PONG GAME -->
+            <div class="game-card playable-pong">
+                <div class="game-header">
+                    <h3>🏓 Pong Battle</h3>
+                    <span class="score" id="pongScore">0 - 0</span>
+                </div>
+                <canvas id="pongCanvas" width="280" height="200"></canvas>
+                <div class="game-controls">
+                    <span>W/S = Player 1 | Arrow Up/Down = Player 2</span>
+                </div>
+            </div>
+
+            <!-- FLAPPY BIRD -->
+            <div class="game-card playable-flappy">
+                <div class="game-header">
+                    <h3>🐦 Flappy Bird</h3>
+                    <span class="score" id="flappyScore">Score: 0</span>
+                </div>
+                <canvas id="flappyCanvas" width="280" height="280"></canvas>
+                <div class="game-controls">
+                    <button onclick="startFlappy()">Start</button>
+                    <span>Click/Space to Jump</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
